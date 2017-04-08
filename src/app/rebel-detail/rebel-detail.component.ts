@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 import { Rebel } from '../rebel';
-import { Planet } from '../planet';
 import { DataService } from '../data.service';
 
 @Component({
@@ -11,14 +10,11 @@ import { DataService } from '../data.service';
 })
 export class RebelDetailComponent implements OnInit {
   @Input() rebel: Rebel;
-  planets: Planet[];
   revealModel = false;
 
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.dataService.getPlanets()
-      // .then(planets => this.planets = planets);
-      .subscribe(planets => this.planets = planets);
   }
+   
 }

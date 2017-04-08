@@ -1,12 +1,12 @@
-<md-toolbar color="primary" class="dark">
-  <div class="md-toolbar-tools" fxLayout="row nowrap" fxFlex fxLayoutAlign="end center">
-    <a class="ng-title-icon" href="http://angular.io" target="_blank"><i></i></a>
-    <span fxFlex class="title">One with Angular</span>
-    <span fxFlex="grow"></span>
-    <a fxFlex md-button [routerLink]="['/rebels']"
-      routerLinkActive="router-link-active"><span>Rebels</span></a>
-    <a fxFlex md-button [routerLink]="['/planets']"
-      routerLinkActive="router-link-active"><span>Planets</span></a>
-    <a fxFlex md-button href="http://johnpapa.net" target="_blank"><span>John Papa</span></a>
-  </div>
+<md-toolbar color="primary">
+   <button md-icon-button (click)="nav.open()">
+                    <md-icon>menu</md-icon>
+                </button>
+  <a class="ng-title-icon" href="http://angular.io" target="_blank"><i></i></a>
+  <span>Cool App</span>
+  <span fxFlex></span>
+  <a md-button [routerLink]="['/login']" routerLinkActive="router-link-active"><span >Login</span></a>
+  <a md-button [routerLink]="['/signup']" routerLinkActive="router-link-active"><span >Sign Up</span></a>
+  <a md-button [routerLink]="['/home']" routerLinkActive="router-link-active"><span >Home</span></a>
+  <a md-button [routerLink]="['/rebels']" routerLinkActive="router-link-active"><span >Rebels</span></a>
 </md-toolbar>

@@ -6,7 +6,7 @@ import { DataService } from '../data.service';
 
 class DataServiceStub {
   getRebels() { return []; }
-  getPlanets() { return []; }
+ 
 }
 
 describe('RebelsComponent', () => {

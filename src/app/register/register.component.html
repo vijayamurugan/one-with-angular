@@ -1,0 +1,24 @@
+<div style="padding-top:8%" fxFlex fxLayoutAlign="center center">
+  <md-card fxFlex fxFlex.xs="70" fxFlex="30">
+    <md-card-header>
+      <span style="font-size: 1.3em; margin-bottom: 5px;align-content:center" fxFlexAlign="center">Register</span>
+    </md-card-header>
+    <md-card-content>
+      <md-input-container>
+        <input mdInput ngModel name="firstName" placeholder="First Name" required>
+      </md-input-container>
+      <md-input-container>
+        <input mdInput ngModel name="lastName" placeholder="Last Name" required>
+      </md-input-container>
+      <md-input-container>
+        <input mdInput ngModel name="email" placeholder="Email" required>
+      </md-input-container>
+      <md-input-container>
+        <input mdInput ngModel name="password" type="password" placeholder="Password (6 or more Characters)" required>
+      </md-input-container>
+    </md-card-content>
+    <md-card-actions align="center">
+      <button md-raised-button class="primary">Sign Up</button>
+    </md-card-actions>
+  </md-card>
+  <div>

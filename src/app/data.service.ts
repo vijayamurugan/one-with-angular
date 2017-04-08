@@ -3,7 +3,6 @@ import { Http, Response } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 import { Rebel } from './rebel';
-import { Planet } from './planet';
 
 // const rebels: Rebel[] = [
 //   new Rebel(10, 'Jyn Erso', 1),
@@ -42,12 +41,7 @@ export class DataService {
       .map(rebels => this.sortBy(rebels, 'name'));
   }
 
-  getPlanets() {
-    return this.http.get('https://onewithangularapp.azurewebsites.net/api/planets')
-      .map((response: Response) => response.json())
-      .map(planets => this.sortBy(planets, 'name'));
-  }
-
+ 
   private sortBy(data: any[], property: string) {
     return data.sort((a: any, b: any) => {
       if (a[property] < b[property]) { return -1; }
