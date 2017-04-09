@@ -1,0 +1,70 @@
+<div class="content" fxLayout="row" fxLayout.sm="column" fxLayoutGap="30px">
+  <md-card fxFlex="50" class="card card-wizard">
+    <h3 class="title">Edit Profile</h3>
+    <md-card-content>
+      <div fxLayout="row" fxLayoutGap="18px">
+        <md-input-container>
+          <input mdInput ngModel name="name" placeholder="COMPANY" required>
+        </md-input-container>
+        <md-input-container>
+          <input mdInput ngModel name="name" placeholder="USER NAME" disabled>
+        </md-input-container>
+        <md-input-container>
+          <input mdInput ngModel name="name" placeholder="EMAIL ADDRESS" required>
+        </md-input-container>
+      </div>
+      <div fxLayout="row" fxLayoutGap="18px">
+        <md-input-container>
+          <input mdInput ngModel name="name" placeholder="FIRST NAME" required>
+        </md-input-container>
+        <md-input-container>
+          <input mdInput ngModel name="name" placeholder="LAST NAME">
+        </md-input-container>
+      </div>
+      <div fxLayout="row">
+        <md-input-container class="example-full-width">
+          <textarea mdInput placeholder="ADDRESS"></textarea>
+        </md-input-container>
+      </div>
+      <div fxLayout="row" fxLayoutGap="18px">
+        <md-input-container class="example-full-width">
+          <input mdInput placeholder="City">
+        </md-input-container>
+        <md-input-container class="example-full-width">
+          <input mdInput placeholder="State">
+        </md-input-container>
+        <md-input-container class="example-full-width">
+          <input mdInput #postalCode maxlength="10" placeholder="Postal Code" value="94043">
+          <md-hint align="end">10</md-hint>
+        </md-input-container>
+      </div>
+      <div fxLayout="row">
+        <md-input-container class="example-full-width">
+          <textarea mdInput placeholder="ABOUT ME"></textarea>
+        </md-input-container>
+      </div>
+    </md-card-content>
+    <md-card-actions align="end">
+      <button md-raised-button class="primary" color="accent" md-button>Update Profile</button>
+    </md-card-actions>
+  </md-card>
+  <md-card class="card" fxFlex="20">
+    <div class="card card-user">
+      <div class="image">
+        <img alt="..." src="http://lbd-pro-angular2.creative-tim.com/assets/img/full-screen-image-3.jpg">
+      </div>
+      <div class="content">
+        <div class="author">
+          <a href="#">
+            <img alt="..." class="avatar border-gray" src="http://d152j5tfobgaot.cloudfront.net/wp-content/uploads/2014/08/yourstory_Purplista_InsideArticle21.jpg">
+            <h4 class="title">Tania Andrew<br>
+              <small>michael24</small>
+            </h4>
+          </a>
+        </div>
+        <p class="description text-center"> "Lamborghini Mercy <br> Your chick she so thirsty <br> I'm in that two seat Lambo"
+        </p>
+      </div>
+    </div>
+  </md-card>
+</div>

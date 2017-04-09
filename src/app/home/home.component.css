@@ -4,14 +4,28 @@
 }
 
 md-sidenav {
-  width: 280px;
+  width: 216px;
+  background: #f2f2f2;
+  padding: 12px 8px 52px;
+  position: absolute;
+  line-height: 40px;
+  z-index: 4;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxH8jLzwdezY5Qp4lZZkrZTKCX1icnOPqJAut-05mb8O5PkFfL');
+  opacity: 0.5;
+  box-shadow: inset 0 0 0  #E0F7FA;
 }
 
 .content {
   padding: 12px;
 }
 
- /deep/md-icon.avatar {
+/deep/md-icon.avatar {
   overflow: hidden;
   width: 64px;
   height: 64px;
@@ -25,6 +39,18 @@ md-sidenav {
   bottom: 16px;
 }
 
- /deep/.mat-list-item-content{
-   height: auto !important;
- }
+/deep/.mat-list-item-content {
+  height: auto !important;
+}
+
+.sidebar-background {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+}

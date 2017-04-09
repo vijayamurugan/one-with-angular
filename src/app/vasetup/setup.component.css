@@ -1,0 +1,107 @@
+.office_image {
+  background-image: url('office.svg');
+  background-size: cover;
+}
+
+.google_image {
+  background-image: url('google.svg');
+  background-size: cover;
+}
+
+.setup-card {
+  width: 400px;
+}
+
+.padding-setup {
+  padding-top: 8%;
+}
+
+.card .header {
+  padding: 15px 15px 0px;
+  color: #333333;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card .title {
+  margin: 0;
+  color: #333333;
+  font-weight: 300;
+}
+
+.card-wizard {
+  border-radius: 10px;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.card .category {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888888;
+  margin-bottom: 0px;
+}
+
+.example-card {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  margin-top: 23px;
+  background-image: -webkit-linear-gradient(bottom, #FFD51A 50%, white 50%);
+}
+
+.example-header-image {
+  padding-top: 17px;
+}
+
+.card-user .image {
+  height: 110px;
+}
+
+.card-user .image-plain {
+  height: 0;
+  margin-top: 110px;
+}
+
+.card-user .author {
+  text-align: center;
+  text-transform: none;
+  margin-top: -70px;
+}
+
+.card-user .avatar {
+  width: 124px;
+  height: 124px;
+  border: 5px solid #FFFFFF;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.card-user .avatar.border-gray {
+  border-color: #EEEEEE;
+}
+
+.card-user .title {
+  line-height: 24px;
+}
+
+.card-user .content {
+  min-height: 240px;
+}
+
+.card .image {
+  overflow: hidden;
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}

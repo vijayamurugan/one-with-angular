@@ -1,0 +1,27 @@
+<div class="padding-setup" fxLayoutAlign="center center">
+  <md-card class="card card-wizard">
+    <div class="header text-center">
+      <h3 class="title">Setup</h3>
+      <p class="category">Setup Virtual Assitant and Calendar</p>
+      <md-divider></md-divider>
+    </div>
+    <span fxflex></span>
+    <span class="padding-setup" fxLayoutAlign="center center">Virtual Assitant</span>
+    <form #form="ngForm" (ngSubmit)="dialogRef.close(form.value)" ngNativeValidate>
+      <div fxLayoutAlign="center center" fxLayoutGap="8px">
+        <md-input-container>
+          <input mdInput ngModel name="email" placeholder="Email" required>
+        </md-input-container>
+        <button md-raised-button class="primary" color="accent">Confirm</button>
+      </div>
+      <span class="padding-setup" fxLayoutAlign="center center">Primary Calendar</span>
+      <div class="padding-setup" fxLayoutAlign="center center" fxLayout="row" fxLayoutGap="8px">
+        <img mdTooltip="Google Calendar" class="avatar" src="assets/googlepng.png">
+        <img mdTooltip="Outlook" class="avatar" src="assets/officepng.png">
+      </div>
+      <md-card-actions align="end">
+        <button md-raised-button class="primary" color="warn" md-button>DONE</button>
+      </md-card-actions>
+    </form>
+  </md-card>
+</div>

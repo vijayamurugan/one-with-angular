@@ -2,7 +2,7 @@
 
 @include mat-core();
 
-$primary: mat-palette($mat-red);
+$primary: mat-palette($mat-green);
 $accent: mat-palette($mat-blue);
 
 $theme: mat-light-theme($primary, $accent);
@@ -10,10 +10,10 @@ $theme: mat-light-theme($primary, $accent);
 @include angular-material-theme($theme);
 
 .dark-theme {
-  $dark-primary: mat-palette($mat-light-blue);
-  $dark-accent: mat-palette($mat-green);
+  $dark-primary: mat-palette($mat-blue);
+  $dark-accent: mat-palette($mat-red);
 
-  $dark-theme: mat-dark-theme($dark-primary, $dark-accent);
+  $dark-theme: mat-light-theme($dark-primary, $dark-accent);
 
   @include angular-material-theme($dark-theme);
 }

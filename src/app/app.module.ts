@@ -14,7 +14,8 @@ import { RebelDetailComponent } from './rebel-detail/rebel-detail.component';
 import { LoginComponent } from "app/login";
 import { RegisterComponent } from "app/register";
 import { HomeComponent } from "app/home";
-
+import { SetupComponent } from "app/vasetup";
+import { ProfileComponent } from "app/profile";
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,9 @@ import { HomeComponent } from "app/home";
     RebelDetailComponent,
     LoginComponent,
     RegisterComponent,
-    HomeComponent
+    HomeComponent,
+    SetupComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
